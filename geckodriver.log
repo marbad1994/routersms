@@ -1,0 +1,248 @@
+1535439278500	geckodriver	INFO	geckodriver 0.20.1
+1535439278509	geckodriver	INFO	Listening on 127.0.0.1:48235
+1535439279539	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.JamTpyX4X2lS"
+1535439281901	Marionette	INFO	Listening on port 41327
+1535439281968	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 8885, Gecko_IOThread] WARNING: pipe error (60): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535458109445	geckodriver	INFO	geckodriver 0.20.1
+1535458109453	geckodriver	INFO	Listening on 127.0.0.1:59853
+1535458110477	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.G7F4Gkl2G7uF"
+1535458112278	Marionette	INFO	Listening on port 40089
+1535458112298	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+1535458157584	geckodriver	INFO	geckodriver 0.20.1
+1535458157590	geckodriver	INFO	Listening on 127.0.0.1:42295
+1535458157604	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.BqFoHhwbwQ2i"
+1535458160247	Marionette	INFO	Listening on port 34791
+1535458160344	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 16042, Chrome_ChildThread] WARNING: pipe error: Brutet rör: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 709
+[Parent 15952, Gecko_IOThread] WARNING: pipe error (59): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535458189903	geckodriver	INFO	geckodriver 0.20.1
+1535458189907	geckodriver	INFO	Listening on 127.0.0.1:37723
+1535458189919	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.wjTRn5aVDNMb"
+1535458191471	Marionette	INFO	Listening on port 41881
+1535458191533	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 16448, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535458280220	geckodriver	INFO	geckodriver 0.20.1
+1535458280224	geckodriver	INFO	Listening on 127.0.0.1:36053
+1535458280236	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.r1lrvlAvPyG3"
+1535458281933	Marionette	INFO	Listening on port 43621
+1535458281955	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 16701, Gecko_IOThread] WARNING: pipe error (75): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535458350958	geckodriver	INFO	geckodriver 0.20.1
+1535458350962	geckodriver	INFO	Listening on 127.0.0.1:50537
+1535458350975	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.ualLOOF5viXV"
+1535458352689	Marionette	INFO	Listening on port 45513
+1535458352782	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535458642012	geckodriver	INFO	geckodriver 0.20.1
+1535458642016	geckodriver	INFO	Listening on 127.0.0.1:45775
+1535458642029	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.4zq213Vocrbw"
+1535458644581	Marionette	INFO	Listening on port 34351
+1535458644658	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+[Parent 16966, Gecko_IOThread] WARNING: pipe error (75): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535458663297	geckodriver	INFO	geckodriver 0.20.1
+1535458663301	geckodriver	INFO	Listening on 127.0.0.1:53585
+1535458663314	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.XXmsK6fOnAIG"
+1535458664993	Marionette	INFO	Listening on port 34919
+1535458665023	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535458723354	geckodriver	INFO	geckodriver 0.20.1
+1535458723373	geckodriver	INFO	Listening on 127.0.0.1:55101
+1535458724383	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.uB5pPhP8hiUW"
+1535458725997	Marionette	INFO	Listening on port 46507
+1535458726020	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 17738, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535458839947	geckodriver	INFO	geckodriver 0.20.1
+1535458839952	geckodriver	INFO	Listening on 127.0.0.1:34151
+1535458839965	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.HaB0sFbkOicR"
+1535458841678	Marionette	INFO	Listening on port 33289
+1535458841771	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535459238532	geckodriver	INFO	geckodriver 0.20.1
+1535459238539	geckodriver	INFO	Listening on 127.0.0.1:41193
+1535459238559	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.NCqOzmaYJDns"
+1535459240345	Marionette	INFO	Listening on port 35951
+1535459240397	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535459293381	geckodriver	INFO	geckodriver 0.20.1
+1535459293385	geckodriver	INFO	Listening on 127.0.0.1:59881
+1535459293398	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MkHyxY9MAWW2"
+1535459295006	Marionette	INFO	Listening on port 33775
+1535459295106	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535459348162	geckodriver	INFO	geckodriver 0.20.1
+1535459348166	geckodriver	INFO	Listening on 127.0.0.1:34227
+1535459348178	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.CkqhhP7IEuRo"
+1535459349739	Marionette	INFO	Listening on port 46311
+1535459349798	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535459407928	geckodriver	INFO	geckodriver 0.20.1
+1535459407932	geckodriver	INFO	Listening on 127.0.0.1:35671
+1535459407944	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Yk0QIfuHDCWi"
+1535459409491	Marionette	INFO	Listening on port 43129
+1535459409552	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 19434, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 19371, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535459439945	geckodriver	INFO	geckodriver 0.20.1
+1535459439949	geckodriver	INFO	Listening on 127.0.0.1:50461
+1535459439962	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.na24bRuLezQi"
+1535459441694	Marionette	INFO	Listening on port 38749
+1535459441770	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.warn: LoginRecipes: getRecipes: falling back to a synchronous message for: http://192.168.1.1
+console.warn: nsLoginManager: searchLogins: `formSubmitURL` or `httpRealm` is recommended
+1535460033676	geckodriver	INFO	geckodriver 0.20.1
+1535460033680	geckodriver	INFO	Listening on 127.0.0.1:38785
+1535460033694	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.aVRdp58t4Jvk"
+1535460035708	Marionette	INFO	Listening on port 42207
+1535460035813	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 20206, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 20141, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535460793479	geckodriver	INFO	geckodriver 0.20.1
+1535460793483	geckodriver	INFO	Listening on 127.0.0.1:42467
+1535460793496	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.KOVExCLx6wfy"
+1535460795105	Marionette	INFO	Listening on port 40241
+1535460795203	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/index.js?ver=V200R001B270D25SP02C56, line 161: ReferenceError: csrf_param is not defined
+1535460848361	geckodriver	INFO	geckodriver 0.20.1
+1535460848372	geckodriver	INFO	Listening on 127.0.0.1:59557
+1535460848412	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.53jq1hryd7LO"
+[Parent 20491, Gecko_IOThread] WARNING: pipe error (75): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535460851007	Marionette	INFO	Listening on port 40549
+1535460851033	Marionette	WARN	TLS certificate errors will be ignored for this session
+
+(/usr/lib/firefox/firefox:20806): dconf-WARNING **: Unable to open /var/lib/snapd/desktop/dconf/profile/user: Åtkomst nekas
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 20870, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535460933901	geckodriver	INFO	geckodriver 0.20.1
+1535460933913	geckodriver	INFO	Listening on 127.0.0.1:42113
+1535460933940	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.CeLmeLT2C3UF"
+[Parent 17503, Gecko_IOThread] WARNING: pipe error (75): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535460936815	Marionette	INFO	Listening on port 40613
+1535460936875	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535461273854	geckodriver	INFO	geckodriver 0.20.1
+1535461273860	geckodriver	INFO	Listening on 127.0.0.1:53955
+1535461273873	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rOC9fjVgYVqb"
+1535461275573	Marionette	INFO	Listening on port 36089
+1535461275586	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+1535461390613	geckodriver	INFO	geckodriver 0.20.1
+1535461390617	geckodriver	INFO	Listening on 127.0.0.1:33863
+1535461390629	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.LGhQHvYr7dgQ"
+1535461392219	Marionette	INFO	Listening on port 45943
+1535461392245	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 21789, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1535461464960	geckodriver	INFO	geckodriver 0.20.1
+1535461464964	geckodriver	INFO	Listening on 127.0.0.1:43757
+1535461464977	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.eGBoL1E1CgOJ"
+1535461466627	Marionette	INFO	Listening on port 36825
+1535461466683	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 21388, Gecko_IOThread] WARNING: pipe error (75): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 22066, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535461567853	geckodriver	INFO	geckodriver 0.20.1
+1535461567857	geckodriver	INFO	Listening on 127.0.0.1:36863
+1535461567871	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.iNkM3bKNhQMW"
+1535461569428	Marionette	INFO	Listening on port 44963
+1535461569488	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Child 22286, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535461603608	geckodriver	INFO	geckodriver 0.20.1
+1535461603611	geckodriver	INFO	Listening on 127.0.0.1:47969
+1535461603624	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.kp4qLQ00Ea4z"
+1535461605325	Marionette	INFO	Listening on port 35717
+1535461605332	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 22522, Chrome_ChildThread] WARNING: pipe error (3): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535461706381	geckodriver	INFO	geckodriver 0.20.1
+1535461706385	geckodriver	INFO	Listening on 127.0.0.1:36577
+1535461706397	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.zINmdVktXWmI"
+1535461708414	Marionette	INFO	Listening on port 35069
+1535461708504	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+[Parent 22763, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1535461809500	geckodriver	INFO	geckodriver 0.20.1
+1535461809503	geckodriver	INFO	Listening on 127.0.0.1:60283
+1535461809516	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.6PLc3cNcVA76"
+1535461811188	Marionette	INFO	Listening on port 44313
+1535461811224	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/main.js?ver=V200R001B270D25SP02C56, line 795: ReferenceError: systemInfo is not defined
+1535461828941	geckodriver	INFO	geckodriver 0.20.1
+1535461828950	geckodriver	INFO	Listening on 127.0.0.1:45441
+1535461829978	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.31WYJh53P6MF"
+1535461831546	Marionette	INFO	Listening on port 34871
+1535461831604	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535461849672	geckodriver	INFO	geckodriver 0.20.1
+1535461849678	geckodriver	INFO	Listening on 127.0.0.1:36373
+1535461850708	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.npfyrA8PWxZ4"
+[Parent 23127, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535461852642	Marionette	INFO	Listening on port 34123
+1535461852721	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 23553, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+[Parent 23332, Gecko_IOThread] WARNING: pipe error (75): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535462469239	geckodriver	INFO	geckodriver 0.20.1
+1535462469242	geckodriver	INFO	Listening on 127.0.0.1:42771
+1535462469255	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Jk7YHmELsovs"
+1535462470822	Marionette	INFO	Listening on port 37075
+1535462470879	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 24000, Gecko_IOThread] WARNING: pipe error (72): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535462505491	geckodriver	INFO	geckodriver 0.20.1
+1535462505494	geckodriver	INFO	Listening on 127.0.0.1:48693
+1535462505507	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jVyS2syH59I2"
+1535462507079	Marionette	INFO	Listening on port 40257
+1535462507133	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 24238, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535462526506	geckodriver	INFO	geckodriver 0.20.1
+1535462526521	geckodriver	INFO	Listening on 127.0.0.1:37269
+1535462527534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.GDpdq06yCovK"
+1535462529476	Marionette	INFO	Listening on port 33029
+1535462529603	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://192.168.1.1/js/util.js?ver=V200R001B270D25SP02C56, line 2717: ReferenceError: MACRO_DOMAIN is not defined
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+JavaScript error: resource://gre/modules/ContentPrefServiceParent.jsm, line 152: NS_ERROR_NOT_INITIALIZED: 
+[Parent 24429, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535462549523	geckodriver	INFO	geckodriver 0.20.1
+1535462549550	geckodriver	INFO	Listening on 127.0.0.1:44665
+1535462550542	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.3C0CSkmcB6Fx"
+1535462552530	Marionette	INFO	Listening on port 45093
+1535462552563	Marionette	WARN	TLS certificate errors will be ignored for this session
+1535462604687	geckodriver	INFO	geckodriver 0.20.1
+1535462604690	geckodriver	INFO	Listening on 127.0.0.1:42345
+1535462604703	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.9x2qPvR1gZGt"
+1535462606270	Marionette	INFO	Listening on port 45191
+1535462606331	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 24858, Gecko_IOThread] WARNING: pipe error (75): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535462624700	geckodriver	INFO	geckodriver 0.20.1
+1535462624718	geckodriver	INFO	Listening on 127.0.0.1:59399
+1535462625729	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YIz9SJlBDaIG"
+1535462627294	Marionette	INFO	Listening on port 45511
+1535462627354	Marionette	WARN	TLS certificate errors will be ignored for this session
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping
+1535462943821	geckodriver	INFO	geckodriver 0.20.1
+1535462943827	geckodriver	INFO	Listening on 127.0.0.1:48479
+1535462943842	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.KYrRMrXdB9pE"
+1535462945376	Marionette	INFO	Listening on port 42365
+1535462945453	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 25474, Gecko_IOThread] WARNING: pipe error (73): Förbindelse borttagen av partnern: file /build/firefox-mWstsA/firefox-61.0.1+build1/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+*** UTM:SVC TimerManager:registerTimer called after profile-before-change notification. Ignoring timer registration for id: telemetry_modules_ping

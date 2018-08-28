@@ -1,0 +1,248 @@
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script type="text/javascript" src="/js/loadbyver.js?ver=V200R001B270D25SP02C56"></script>
+<script language="JavaScript" type="text/javascript">
+loadCss("/css/main.css");
+loadJs("/js/util.js");
+loadJs("/js/lib/jquery-1.4.4.js");
+loadJs("/js/lib/log4javascript_lite.js");
+loadJs("/js/lib/jquery.qtip.js");
+loadJs("/js/menutree.js");
+loadJs("/js/adminmenu.js");
+window.name=1518236304;
+loadJs("/js/main.js");
+loadJs("/js/internet_pub.js");
+loadJs("/js/message.js");
+var csrf_param = "0fwZQSPwkSNt3qzuq29Ol3u0E6hXe51yCfZ56oXevrVRIDxV5qHVvOZKU2GKxpxk";
+var csrf_token = "VECp6INx63tG0w0QvW165HrrVe2vcMFUraz02jHFHXZxKnDS8qYT0dBHR3ODov0s";
+
+</script><link rel="stylesheet" type="text/css" href="/css/main.css?ver=V200R001B270D25SP02C56"><link rel="stylesheet" type="text/css" href="/css/sv-se.css?ver=V200R001B270D25SP02C56">
+
+<script type="text/javascript" src="/js/util.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/lib/jquery-1.4.4.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/lib/log4javascript_lite.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/lib/jquery.qtip.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/menutree.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/adminmenu.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/main.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/internet_pub.js?ver=V200R001B270D25SP02C56"></script>
+<script type="text/javascript" src="/js/message.js?ver=V200R001B270D25SP02C56"></script>
+
+<script>
+var NET_MODE_LTE	    = 4;
+var pageInit = {statusreport:0,savemsg:1,lifetime:10752};
+var simLockStatus = [2,10];
+var simStatus = 3;
+var networkStauts = {sms_mem_total:25,sms_mem_used:1};
+var webcfg = new Array(new webcfgst("InternetGatewayDevice.UserInterface.X_Web","homerouter.cpe"),null);
+function webcfgst(domain, domain_name) {
+this.domain = domain;
+this.domainName = domain_name;
+}
+var MACRO_DOMAIN = webcfg[0].domainName;
+var host = [["InternetGatewayDevice.LANDevice.1.LANHostConfigManagement.IPInterface.1","192.168.1.1","255.255.255.0"],null];
+var MACRO_GATEWAY = host[0][1];
+wanIPDNS = {'dataip': '213.101.59.34' , 'voipWanIP': '' , 'tr069WanIP': '' , 'datadns': '130.244.127.161,130.244.127.169', 'ipv6addr': '2a00:801:320:1bad:5a2c:80ff:fe13:9208/64', 'ipv6dns': '2a00:800:1000:3::1,2a00:800:1000:4::1'};
+var currentStats = networkStauts;
+if (simStatus != MACRO_PIN_DISABLE
+&& simStatus != MACRO_PIN_VALIDATE)
+{
+location.href = PIN_PAGE + '?lastPage=/html/sms/message.asp';
+}
+else if (2 != simLockStatus[0]) {
+location.href = SIM_LOCK_PAGE + '?lastPage=/html/sms/message.asp';
+}
+</script>
+<script>
+var cfg_lang_id = 0;
+getConfigData('../config/sms/sms_config.xml', function($xml)
+{
+var ret = xml2object($xml);
+if (ret.type == 'config')
+{
+cfg_lang_id = ret.config.lang_id;
+}
+},
+{
+sync: true
+});
+</script>
+<title>B593s-22</title>
+<style type="text/css">
+a:link {
+text-decoration :none;
+}
+a:visited {
+text-decoration :none;
+}
+a:hover {
+text-decoration :none;
+}
+a:active {
+text-decoration :none;
+}
+</style>
+</head>
+<body>
+<div id="wrap">
+<div id="main" class="clearfix">
+<div id="header"><div id="header_turnbg">
+<div class="head_dim head_div">
+<div class="logo_content"></div>
+<div class="help">&nbsp;
+<a id="help_url" style="cursor:pointer;" onclick="getHelp()">
+<label id="help_span">Hjälp</label></a>
+&nbsp;<a style="cursor:pointer;" onclick="clickLogout();">
+<label id="logout_span">Utloggning</label></a>&nbsp;
+</div>
+<div class="language">
+<span><select id="language_sel" onchange="changeSelLanguage()">
+<option value="sv-se" selected="true">Svenska</option><option value="en_us">English</option></select></span>
+</div>
+<div class="cplmn">
+<span id="plmnId"></span>
+</div>
+<div class="tools">
+<ul>
+<li id="sms_gif" onclick="jumptosms()" class="cursor" style="display: block; background-image: url(&quot;/res/sms_readed.gif&quot;);"><span id="tooltip_sms_gif"></span></li>
+<li id="sim_gif" style="display: block; background-image: url(&quot;/res/sim_enable.gif&quot;);"><span id="tooltip_sim_gif"></span></li>
+<li id="signal_gif" style="display: block; background-image: url(&quot;/res/signal_4.gif&quot;);"><span id="tooltip_signal_gif"></span></li>
+<li id="mode_gif" style="display: none;"><span id="tooltip_mode_gif"></span></li>
+<li id="roam_gif" style="display: none;"><span id="tooltip_roam_gif"></span></li>
+<li id="connect_gif" style="display: block; background-image: url(&quot;/res/wan_901.gif&quot;);"><span id="tooltip_connect_gif"></span></li>
+<li id="wifi_gif" style="display: block; background-image: url(&quot;/res/station_3.gif&quot;);"><span id="tooltip_wifi_gif"></span></li>
+<li id="battery_gif"><span id="tooltip_battery_gif"></span></li>
+</ul>
+</div>
+</div>
+<div id="main_menu" class="main_menu"><ul><li id="header_Admin_0_0" class="menu_li"><a id="Admin_0_0" href="/html/status/overview.asp" target="_top">Start</a></li><li id="header_Admin_0_1"><a id="Admin_0_1" href="/html/ntwkall/wan_settings.asp" target="_top">Internet</a></li><li id="header_Admin_0_2"><a id="Admin_0_2" href="/html/ntwkall/dhcp.asp" target="_top">LAN</a></li><li id="header_Admin_0_3"><a id="Admin_0_3" href="/html/ntwkall/wlan.asp" target="_top">Wi-Fi</a></li><li id="header_Admin_0_4"><a id="Admin_0_4" href="/html/security/firewall.asp" target="_top">Säkerhet</a></li><li id="header_Admin_0_5"><a id="Admin_0_5" href="/html/application/ddns.asp" target="_top" class="active">Tjänster</a></li><li id="header_Admin_0_6"><a id="Admin_0_6" href="/html/management/maintenance.asp" target="_top">System</a></li></ul></div>
+</div>
+
+</div>
+<div id="title_image"></div>
+<div class="content">
+<div class="main_left">
+<div id="settings_menu"><div id="settings_menu" class="menu_settings"><ul><li class="nosub" id="Admin_0_5_0"><a href="/html/application/ddns.asp" target="_top">DDNS</a></li><li class="nosub nosubclick" id="Admin_0_5_1"><a href="/html/sms/message.asp" target="_top">SMS-meddelanden</a></li><li class="nosub" id="Admin_0_5_2"><a href="/html/sms/messagesettings.asp" target="_top">SMS-inställningar</a></li><li class="nosub" id="Admin_0_5_3"><a href="/html/application/ftp.asp" target="_top">FTP-server</a></li><li class="nosub" id="Admin_0_5_4"><a href="/html/application/samba.asp" target="_top">Samba-server</a></li><li class="nosub" id="Admin_0_5_5"><a href="/html/application/multimediashare.asp" target="_top">Multimedia Delning</a></li><li class="nosub" id="Admin_0_5_6"><a href="/html/application/usbuser.asp" target="_top">Användarinställningar</a></li><li class="nosub" id="Admin_0_5_7"><a href="/html/application/usbstorage.asp" target="_top">USB-lagring</a></li></ul></div></div>
+</div>
+<div class="content_right">
+<div class="main_content">
+<div class="content_right_title">
+<span><script type="text/javascript">document.write(sms_page_title);</script>SMS-meddelanden</span>
+</div>
+<div class="content_right_center">
+<div class="content_desc">
+<p><script type="text/javascript">document.write(sms_pagehelp_desc);</script>Du kan skicka och ta emot meddelanden. Standardinställningen är att meddelanden sparas på USIM-kortet. Om USIM-kortet är fullt tar du bort vissa meddelanden för att frigöra lagringsutrymme. <br><br><b>Obs!</b> Routern stöder inte MMS.</p>
+</div>
+<div class="content_item_title">
+<script type="text/javascript">document.write(sms_item_title_sendmsg);</script>Skicka meddelande
+</div>
+<div id="generalSettingHeadId">
+<div class="content_item">
+<div class="content_item_left">
+<script type="text/javascript">document.write(sms_item_sendmsg_phonenumber);</script>Telefonnummer:
+</div>
+<div class="content_item_right">
+<input style="width:260px" id="phnoe_number" onblur="addSeparateToNumber();" onchange="addSeparateToNumber();" onkeyup="phoneNumberChange(event);" type="text">
+<span class="asterisk">&nbsp;&nbsp;&nbsp;*</span>
+</div>
+</div>
+<div class="content_item">
+<div class="content_item_left">
+<script type="text/javascript">document.write(sms_item_sendmsg_content);</script>Innehåll:
+</div>
+<div class="content_item_right">
+<table class="sms_content_bott"><tbody><tr><td style="width:302px;">
+<textarea type="text" id="sms_msg_content" rows="8" onkeydown="MsgContentChange(&quot;sms_msg_content&quot;,&quot;counter&quot;);" onkeyup="MsgContentChange(&quot;sms_msg_content&quot;,&quot;counter&quot;);"></textarea>
+</td>
+<td class="v_align_bott" style="width:77px;">
+&nbsp;&nbsp;
+<span id="counter"><script>document.write(sms_item_sendmsg_content_hint_size);</script>612 (1)</span><span class="asterisk">&nbsp;&nbsp;&nbsp;*</span>
+</td>
+</tr>
+<tr>
+<td colspan="2"><div id="error_msg"></div></td>
+</tr>
+</tbody></table>
+</div>
+</div>
+<div class="content_item div_display_none" id="id_progress">
+<div class="content_item_left">
+</div>
+<div class="content_item_right">
+<img class="sms_process" src="/res/process.gif">
+</div>
+</div>
+<div class="button_fix_height">
+<div class="button_continer">
+<script type="text/javascript">
+create_button(common_button_cancel, "cancelBtn");
+</script><span class="button_wrapper" id="cancelBtn"><span class="button_left"><span class="button_right"><span class="button_center">Avbryt</span></span></span></span>
+<span class="button_space"></span>
+<script type="text/javascript">
+create_button(sms_button_savedraft, "saveDraftBtn");
+</script><span class="button_wrapper" id="saveDraftBtn"><span class="button_left"><span class="button_right"><span class="button_center">Spara</span></span></span></span>
+<span class="button_space"></span>
+<script type="text/javascript">
+create_button(sms_button_send, "sendBtn");
+</script><span class="button_wrapper" id="sendBtn"><span class="button_left"><span class="button_right"><span class="button_center">Skicka</span></span></span></span>
+</div>
+</div>
+</div>
+<div id="erroinfo"></div>
+<div class="content_item_title">
+<script type="text/javascript">document.write(sms_item_title_msglist);</script>Meddelandelista
+</div>
+<div class="table_edit" id="messages_list">
+<div class="table_button_container">
+<script type="text/javascript">create_button(sms_button_refresh, "refresh_tr_btn");</script><span class="button_wrapper" id="refresh_tr_btn"><span class="button_left"><span class="button_right"><span class="button_center">Uppdatera</span></span></span></span>
+</div>
+<div class="table_button_container">
+<script type="text/javascript">create_button(sms_button_delall, "delete_tr_btn");</script><span class="button_wrapper" id="delete_tr_btn"><span class="button_left"><span class="button_right"><span class="button_center">Ta bort sida</span></span></span></span>
+</div>
+</div>
+<div class="tab">
+<ul>
+<li id="inbox_tr_btn" onclick="showInboxItems();" style="color: rgb(153, 0, 0); font-weight: 600; background-color: rgb(244, 244, 244);"><script>document.write(sms_item_msglist_inbox);</script>Inkorgen</li>
+<li id="drafts_tr_btn" onclick="showDraftsItems();" style="color: rgb(0, 0, 0); background-color: rgb(192, 192, 192);"><script>document.write(sms_item_msglist_drafts);</script>Utkast</li>
+<li id="sentbox_tr_btn" onclick="showSentboxItems();" style="color: rgb(0, 0, 0); background-color: rgb(192, 192, 192);"><script>document.write(sms_item_msglist_sentbox);</script>Utkorgen</li>
+</ul>
+</div>
+<div id="sms_list_status" style="font-size:18px;display:none"><label><script>document.write(sms_listloading);</script>Läser in meddelande... Vänta.</label></div>
+<div class="table_top"></div>
+<div id="inbox_list_div">
+<div id="inbox_div"><table class="table_list fixedtable"><tbody><tr class="even_tr"><th style="width:50px">Index</th><th style="width:55px">Status</th><th>Nummer</th><th style="width:40%">Innehåll</th><th>Datum</th><th>Åtgärd</th></tr><tr id="inbox_record_1" class="odd_tr">
+<td>1</td>
+<td><div class="smsstatus_1 smsstatus"></div></td>
+<td id="inbox_record_1_2">72661</td>
+<td name="idContentName"><div id="inbox_record_1_3" name="divContentName" style="word-wrap:break-word;width:100%;white-space:pre-wrap;margin-left:auto;margin-right:auto">Tack! Du har nu fått 5 GB data. Mvh Tele2</div></td>
+<td>08.28.2018 15:08:57</td>
+<td align="center"><a href="javascript:void(0);" onclick="deleteItem('5');">Ta bort</a>|
+<a href="javascript:void(0);" onclick="replyItem('1','inbox');">Svara</a>|
+<a href="javascript:void(0);" onclick="forwardItem('1','inbox');">Vidarebefordra</a></td>
+</tr>
+
+</tbody></table></div>
+<div class="sms_page" id="showInboxPageDivId"><a href="#" onclick="refreshPageNum('1')"><b>1</b></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+</div>
+<div id="drafts_list_div" class="div_display_none" style="display: none;">
+<div id="drafts_div"><table class="table_list fixedtable"><tbody><tr class="odd_tr even_tr"><th style="width:50px">Index</th><th style="width:55px">Status</th><th>Nummer</th><th style="width:50%">Innehåll</th><th>Åtgärd</th></tr>
+</tbody></table></div>
+<div class="sms_page" id="showDraftsPageDivId">
+</div>
+</div>
+<div id="sentbox_list_div" class="div_display_none" style="display: none;">
+<div id="sentbox_div"><table class="table_list fixedtable"><tbody><tr class="odd_tr"><th style="width:50px">Index</th><th style="width:55px">Status</th><th>Nummer</th><th style="width:40%">Innehåll</th><th>Åtgärd</th></tr>
+</tbody></table></div>
+<div class="sms_page" id="showSentboxPageDivId">
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer" class="footer"><img src="/res/logo-footer.gif" alt="" border="0" align="absbottom"><span>&nbsp;&nbsp;Copyright © Huawei Technologies Co., Ltd. 1998-2015. Med ensamrätt.&nbsp;&nbsp;<img src="/res/split_line1.gif">&nbsp;&nbsp;<a href="http://consumer.huawei.com/en/privacy-policy/index.htm" target="_blanck">Privacy Policy</a>&nbsp;&nbsp;<img src="/res/split_line1.gif">&nbsp;&nbsp;<a href="#" onclick="window.location.replace('/res/B593s_GPL_Written_Offer.pdf');">Öppna källinfo</a></span></div>
+
+
+<div qtip="0" id="qtip-0" role="tooltip" aria-describedby="qtip-0-content" class="qtip qtip-wifi_gif" style="border-radius: 0px; z-index: 15000; position: absolute; display: none; padding: 10px 0px 0px; width: 110px;"><div class="qtip-tip" dir="ltr" rel="topright" style="position: absolute; height: 10px; width: 10px; margin: 0px auto; line-height: 0.1px; font-size: 1px; top: 0px; right: 5px; display: block;"><canvas height="10" width="10"></canvas></div>   <div class="qtip-wrapper" style="position:relative; overflow:hidden;"><div class="qtip-borderTop" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="topLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="topRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div>     <div class="qtip-contentWrapper" style="overflow: hidden; border-color: rgb(99, 109, 115); border-style: solid; border-width: 0px 5px; border-image: none 100% / 1 / 0 stretch;">        <div id="qtip-0-content" class="qtip-content qtip-content" style="background: rgb(255, 255, 231) none repeat scroll 0% 0%; color: rgb(17, 17, 17); overflow: hidden; padding: 5px 7px;"><b>Wi-Fi aktiverad</b></div> </div><div class="qtip-borderBottom" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="bottomLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="bottomRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div></div></div><div qtip="1" id="qtip-1" role="tooltip" aria-describedby="qtip-1-content" class="qtip qtip-sim_gif" style="border-radius: 0px; z-index: 15000; position: absolute; display: none; padding: 10px 0px 0px; width: 128px;"><div class="qtip-tip" dir="ltr" rel="topright" style="position: absolute; height: 10px; width: 10px; margin: 0px auto; line-height: 0.1px; font-size: 1px; top: 0px; right: 5px; display: block;"><canvas height="10" width="10"></canvas></div>   <div class="qtip-wrapper" style="position:relative; overflow:hidden;"><div class="qtip-borderTop" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="topLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="topRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 118px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div>     <div class="qtip-contentWrapper" style="overflow: hidden; border-color: rgb(99, 109, 115); border-style: solid; border-width: 0px 5px; border-image: none 100% / 1 / 0 stretch;">        <div id="qtip-1-content" class="qtip-content qtip-content" style="background: rgb(255, 255, 231) none repeat scroll 0% 0%; color: rgb(17, 17, 17); overflow: hidden; padding: 5px 7px;"><b>USIM-kort normalt</b></div> </div><div class="qtip-borderBottom" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="bottomLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="bottomRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 118px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div></div></div><div qtip="2" id="qtip-2" role="tooltip" aria-describedby="qtip-2-content" class="qtip qtip-signal_gif" style="border-radius: 0px; z-index: 15000; position: absolute; display: none; padding: 10px 0px 0px; width: 110px;"><div class="qtip-tip" dir="ltr" rel="topright" style="position: absolute; height: 10px; width: 10px; margin: 0px auto; line-height: 0.1px; font-size: 1px; top: 0px; right: 5px; display: block;"><canvas height="10" width="10"></canvas></div>   <div class="qtip-wrapper" style="position:relative; overflow:hidden;"><div class="qtip-borderTop" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="topLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="topRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div>     <div class="qtip-contentWrapper" style="overflow: hidden; border-color: rgb(99, 109, 115); border-style: solid; border-width: 0px 5px; border-image: none 100% / 1 / 0 stretch;">        <div id="qtip-2-content" class="qtip-content qtip-content" style="background: rgb(255, 255, 231) none repeat scroll 0% 0%; color: rgb(17, 17, 17); overflow: hidden; padding: 5px 7px;"><b>4G</b></div> </div><div class="qtip-borderBottom" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="bottomLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="bottomRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div></div></div><div qtip="3" id="qtip-3" role="tooltip" aria-describedby="qtip-3-content" class="qtip qtip-connect_gif" style="border-radius: 0px; z-index: 15000; position: absolute; display: none; padding: 10px 0px 0px; width: 110px;"><div class="qtip-tip" dir="ltr" rel="topright" style="position: absolute; height: 10px; width: 10px; margin: 0px auto; line-height: 0.1px; font-size: 1px; top: 0px; right: 5px; display: block;"><canvas height="10" width="10"></canvas></div>   <div class="qtip-wrapper" style="position:relative; overflow:hidden;"><div class="qtip-borderTop" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="topLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="topRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div>     <div class="qtip-contentWrapper" style="overflow: hidden; border-color: rgb(99, 109, 115); border-style: solid; border-width: 0px 5px; border-image: none 100% / 1 / 0 stretch;">        <div id="qtip-3-content" class="qtip-content qtip-content" style="background: rgb(255, 255, 231) none repeat scroll 0% 0%; color: rgb(17, 17, 17); overflow: hidden; padding: 5px 7px;"><b>Ansluten</b></div> </div><div class="qtip-borderBottom" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="bottomLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="bottomRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div></div></div><div qtip="4" id="qtip-4" role="tooltip" aria-describedby="qtip-4-content" class="qtip qtip-sms_gif" style="border-radius: 0px; z-index: 15000; position: absolute; display: none; padding: 10px 0px 0px; width: 110px;"><div class="qtip-tip" dir="ltr" rel="topright" style="position: absolute; height: 10px; width: 10px; margin: 0px auto; line-height: 0.1px; font-size: 1px; top: 0px; right: 5px; display: block;"><canvas height="10" width="10"></canvas></div>   <div class="qtip-wrapper" style="position:relative; overflow:hidden;"><div class="qtip-borderTop" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="topLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="topRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div>     <div class="qtip-contentWrapper" style="overflow: hidden; border-color: rgb(99, 109, 115); border-style: solid; border-width: 0px 5px; border-image: none 100% / 1 / 0 stretch;">        <div id="qtip-4-content" class="qtip-content qtip-content" style="background: rgb(255, 255, 231) none repeat scroll 0% 0%; color: rgb(17, 17, 17); overflow: hidden; padding: 5px 7px;"><b>1</b></div> </div><div class="qtip-borderBottom" dir="ltr" style="height: 5px; margin-left: 5px; line-height: 0.1px; font-size: 1px; padding: 0px; display: block;"><div rel="bottomLeft" style="left:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div rel="bottomRight" style="right:0; position:absolute; height:5px; width:5px; overflow:hidden; line-height:0.1px; font-size:1px"><canvas height="5" width="5" style="vertical-align: top"></canvas></div><div class="qtip-betweenCorners" style="height: 5px; width: 100px; overflow: hidden; background-color: rgb(99, 109, 115); line-height: 0.1px; font-size: 1px;"></div></div></div></div></body></html>
